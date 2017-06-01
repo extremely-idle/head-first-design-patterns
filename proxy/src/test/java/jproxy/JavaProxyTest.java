@@ -11,7 +11,7 @@ public class JavaProxyTest {
 
     @Test
     public void testProxy() {
-        PersonBean joe = new PersonBeanImpl();
+        final PersonBean joe = new PersonBeanImpl();
         joe.setName("Joe Javabean");
         joe.setGender("Male");
 
