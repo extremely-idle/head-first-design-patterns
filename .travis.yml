@@ -7,7 +7,7 @@ sudo: false
 install: true
 
 script:
-  - mvn -N mvn -N io.takari:maven:wrapper && mvnw clean package
+  - mvn -N io.takari:maven:wrapper && mvnw clean package
 
 after_success:
   - mvnw clean test
