@@ -22,6 +22,8 @@
 
     <modules>
         <module>proxy</module>
+        <module>strategy</module>
+        <module>observer</module>
     </modules>
 
 </project>
