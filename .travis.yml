@@ -1,0 +1,13 @@
+language: java
+jdk:
+  - oraclejdk8
+
+sudo: false
+
+install: true
+
+script:
+  - mvn -N mvn -N io.takari:maven:wrapper && mvnw clean package
+
+after_success:
+  - mvnw clean test
