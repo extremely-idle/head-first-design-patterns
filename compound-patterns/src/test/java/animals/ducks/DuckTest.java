@@ -10,6 +10,7 @@ import animals.geese.factory.AbstractGooseFactory;
 import animals.geese.factory.impl.GooseFactory;
 import behaviours.quacking.Quackable;
 import org.junit.Test;
+import quackologists.Quackologist;
 
 /**
  * Created by ross.moug on 02/06/2017.
@@ -24,8 +25,6 @@ public class DuckTest {
         Quackable duckCall = duckFactory.createDuckCall();
         Quackable rubberDuck = duckFactory.createRubberDuck();
         Quackable goose = gooseFactory.createGoose();
-
-        System.out.println("\nDuck Simulator: With Composite - Flocks");
 
         Flock flockOfDucks = new Flock();
 
@@ -48,11 +47,12 @@ public class DuckTest {
 
         flockOfDucks.add(flockOfMallards);
 
-        System.out.println("\nDuck Simulator: Whole Flock Simulator");
-        simulate(flockOfDucks);
+        System.out.println("\nDuck Simulator: With Observer");
+        Quackologist quackologist = new Quackologist();
 
-        System.out.println("\nDuck Simulator: Mallard Flock Simulator");
-        simulate(flockOfMallards);
+        flockOfDucks.registerObserver(quackologist);
+
+        simulate(flockOfDucks);
 
         System.out.println("The ducks quacked " + QuackCounter.getQuacks() + " times");
     }
