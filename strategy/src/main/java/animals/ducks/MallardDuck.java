@@ -1,4 +1,4 @@
-package ducks;
+package animals.ducks;
 
 import behaviours.flying.FlyWithWings;
 import behaviours.quacking.Quack;
@@ -15,6 +15,6 @@ public class MallardDuck extends Duck {
 
     @Override
     public void display() {
-        System.out.println("Mallard ducks");
+        System.out.println("Mallard animals.ducks");
     }
 }

@@ -1,4 +1,4 @@
-package ducks;
+package animals.ducks;
 
 import behaviours.flying.FlyBehaviour;
 import behaviours.quacking.QuackBehaviour;
@@ -24,7 +24,7 @@ public abstract class Duck {
     }
 
     public void swim() {
-        System.out.println("All ducks float, even decoys!");
+        System.out.println("All animals.ducks float, even decoys!");
     }
 
     public void setFlyBehaviour(FlyBehaviour flyBehaviour) {

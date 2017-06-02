@@ -1,4 +1,4 @@
-package ducks;
+package animals.ducks;
 
 import behaviours.flying.FlyRocketPowered;
 import org.junit.Test;

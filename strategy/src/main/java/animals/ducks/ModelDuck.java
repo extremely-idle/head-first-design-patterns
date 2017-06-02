@@ -1,4 +1,4 @@
-package ducks;
+package animals.ducks;
 
 import behaviours.flying.FlyNoWay;
 import behaviours.quacking.Quack;
