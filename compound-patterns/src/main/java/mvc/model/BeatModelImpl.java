@@ -47,13 +47,13 @@ public class BeatModelImpl implements BeatModel, MetaEventListener {
 
     private void notifyBPMObservers() {
         for (BPMObserver observer : bpmObserverList) {
-            observer.update();
+            observer.updateBPM();
         }
     }
 
     private void notifyBeatObservers() {
         for (BeatObserver observer : beatObserverList) {
-            observer.update();
+            observer.updateBeat();
         }
     }
 
@@ -67,13 +67,15 @@ public class BeatModelImpl implements BeatModel, MetaEventListener {
     }
 
     @Override
-    public void registerOberserver(BeatObserver observer) {
+    public void registerObserver(BeatObserver observer) {
         beatObserverList.add(observer);
     }
 
     @Override
     public void removeObserver(BeatObserver observer) {
-        beatObserverList.remove(observer);
+        if (beatObserverList.contains(observer)) {
+            beatObserverList.remove(observer);
+        }
     }
 
     @Override
@@ -83,7 +85,9 @@ public class BeatModelImpl implements BeatModel, MetaEventListener {
 
     @Override
     public void removeObserver(BPMObserver observer) {
-        bpmObserverList.remove(observer);
+        if (bpmObserverList.contains(observer)) {
+            bpmObserverList.remove(observer);
+        }
     }
 
     @Override
@@ -123,11 +127,26 @@ public class BeatModelImpl implements BeatModel, MetaEventListener {
     }
 
     private void makeTracks(List<Integer> trackList) {
-        // TODO - STUB
+        for (Integer i : trackList) {
+            int key = i;
+
+            if (key != 0) {
+                track.add(makeEvent(144, 9, key, 100, i));
+                track.add(makeEvent(128, 9, key, 100, i+1));
+            }
+        }
     }
 
     private MidiEvent makeEvent(int comd, int chan, int one, int two, int tick) {
-        // TODO - STUB
-        return null;
+        MidiEvent event = null;
+        try {
+            ShortMessage message = new ShortMessage();
+            message.setMessage(comd, chan, one, two);
+            event = new MidiEvent(message, tick);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return event;
     }
 }

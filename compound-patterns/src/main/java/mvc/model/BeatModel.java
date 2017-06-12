@@ -17,7 +17,7 @@ public interface BeatModel {
 
     int getBPM();
 
-    void registerOberserver(BeatObserver observer);
+    void registerObserver(BeatObserver observer);
 
     void removeObserver(BeatObserver observer);
 
