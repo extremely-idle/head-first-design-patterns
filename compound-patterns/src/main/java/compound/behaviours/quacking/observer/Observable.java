@@ -1,4 +1,4 @@
-package behaviours.quacking.observer;
+package compound.behaviours.quacking.observer;
 
 import java.util.ArrayList;
 import java.util.List;

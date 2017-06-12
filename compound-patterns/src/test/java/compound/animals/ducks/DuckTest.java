@@ -8,7 +8,7 @@ import compound.animals.geese.factory.AbstractGooseFactory;
 import compound.animals.geese.factory.impl.GooseFactory;
 import compound.behaviours.quacking.Quackable;
 import org.junit.Test;
-import quackologists.Quackologist;
+import compound.quackologists.Quackologist;
 
 /**
  * Created by ross.moug on 02/06/2017.

@@ -1,6 +1,8 @@
 package compound.animals.ducks.composite;
 
 import compound.behaviours.quacking.Quackable;
+import compound.behaviours.quacking.observer.Observable;
+import compound.behaviours.quacking.observer.Observer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +21,20 @@ public class Flock implements Quackable {
     public void quack() {
         for (Quackable quackable : quackableList) {
             quackable.quack();
+        }
+    }
+
+    @Override
+    public void registerObserver(Observer observer) {
+        for (Quackable quack : quackableList) {
+            quack.registerObserver(observer);
+        }
+    }
+
+    @Override
+    public void notifyObservers() {
+        for (Quackable quackable : quackableList) {
+            quackable.notifyObservers();
         }
     }
 }

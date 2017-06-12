@@ -1,8 +1,8 @@
-package quackologists;
+package compound.quackologists;
 
-import animals.geese.GooseAdapter;
-import behaviours.quacking.observer.Observer;
-import behaviours.quacking.observer.QuackObservable;
+import compound.animals.geese.GooseAdapter;
+import compound.behaviours.quacking.observer.Observer;
+import compound.behaviours.quacking.observer.QuackObservable;
 
 /**
  * Created by Ross on 02/06/2017.

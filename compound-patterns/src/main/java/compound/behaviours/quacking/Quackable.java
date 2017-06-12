@@ -1,6 +1,6 @@
 package compound.behaviours.quacking;
 
-import behaviours.quacking.observer.QuackObservable;
+import compound.behaviours.quacking.observer.QuackObservable;
 
 /**
  * Created by ross.moug on 02/06/2017.

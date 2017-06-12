@@ -1,4 +1,4 @@
-package behaviours.quacking.observer;
+package compound.behaviours.quacking.observer;
 
 /**
  * Created by Ross on 02/06/2017.
