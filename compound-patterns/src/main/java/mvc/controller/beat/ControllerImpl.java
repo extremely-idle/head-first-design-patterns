@@ -1,7 +1,8 @@
-package mvc.controller;
+package mvc.controller.beat;
 
-import mvc.model.BeatModel;
-import mvc.view.DJView;
+import mvc.controller.Controller;
+import mvc.model.beat.BeatModel;
+import mvc.view.ui.DJView;
 
 /**
  * Created by Ross on 12/06/2017.

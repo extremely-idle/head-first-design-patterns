@@ -1,9 +1,9 @@
-package mvc;
+package mvc.beat;
 
 import mvc.controller.Controller;
-import mvc.controller.ControllerImpl;
-import mvc.model.BeatModel;
-import mvc.model.BeatModelImpl;
+import mvc.controller.beat.ControllerImpl;
+import mvc.model.beat.BeatModel;
+import mvc.model.beat.BeatModelImpl;
 
 /**
  * Created by Ross on 12/06/2017.

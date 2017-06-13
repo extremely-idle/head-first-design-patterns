@@ -1,4 +1,4 @@
-package mvc.model;
+package mvc.model.beat;
 
 import mvc.model.observer.BPMObserver;
 import mvc.model.observer.BeatObserver;

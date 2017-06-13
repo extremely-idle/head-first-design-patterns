@@ -1,4 +1,4 @@
-package mvc.view;
+package mvc.view.ui;
 
 import javax.swing.*;
 

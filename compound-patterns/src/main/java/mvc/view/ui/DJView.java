@@ -1,7 +1,7 @@
-package mvc.view;
+package mvc.view.ui;
 
 import mvc.controller.Controller;
-import mvc.model.BeatModel;
+import mvc.model.beat.BeatModel;
 import mvc.model.observer.BPMObserver;
 import mvc.model.observer.BeatObserver;
 
