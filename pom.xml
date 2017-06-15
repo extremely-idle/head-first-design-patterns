@@ -12,6 +12,7 @@
     <modules>
         <module>strategy</module>
         <module>observer</module>
+        <module>decorator</module>
         <module>proxy</module>
         <module>compound-patterns</module>
     </modules>
