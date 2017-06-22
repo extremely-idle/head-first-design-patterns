@@ -1,6 +1,6 @@
-package simple;
+package factory.simple.factory;
 
-import pizza.*;
+import factory.simple.pizza.*;
 
 /**
  * Created by ross.moug on 21/06/2017.

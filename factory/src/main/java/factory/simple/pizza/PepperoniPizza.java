@@ -1,4 +1,4 @@
-package pizza;
+package factory.simple.pizza;
 
 /**
  * Created by ross.moug on 21/06/2017.

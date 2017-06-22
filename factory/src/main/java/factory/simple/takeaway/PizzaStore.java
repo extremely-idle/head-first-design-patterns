@@ -1,7 +1,7 @@
-package takeaway;
+package factory.simple.takeaway;
 
-import pizza.Pizza;
-import simple.SimplePizzaFactory;
+import factory.simple.pizza.Pizza;
+import factory.simple.factory.SimplePizzaFactory;
 
 /**
  * Created by ross.moug on 21/06/2017.

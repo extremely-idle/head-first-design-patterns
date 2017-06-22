@@ -1,15 +1,16 @@
-package pizza;
+package factory.simple.pizza;
 
 /**
  * Created by ross.moug on 21/06/2017.
  */
-public class CheesePizza extends Pizza {
+public class VeggiePizza extends Pizza {
 
-    public CheesePizza() {
-        name = "Cheese Pizza";
+    public VeggiePizza() {
+        name = "Beggie Pizza";
         dough = "Thin Crust Dough";
         sauce = "Marinara Sauce";
 
         toppings.add("Grated Reggiano Cheese");
+        toppings.add("Vegetables");
     }
 }
