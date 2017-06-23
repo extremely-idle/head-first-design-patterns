@@ -13,7 +13,7 @@ public class ChicagoStyleVeggiePizza extends Pizza {
         sauce = "Plum Tomato Sauce";
 
         toppings.add("Shredded Mozzarella Cheese");
-        toppings.add("Vegetables");
+        toppings.add("Vegetable");
     }
 
     public void cut() {

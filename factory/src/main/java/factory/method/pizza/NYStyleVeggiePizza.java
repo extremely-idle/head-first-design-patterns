@@ -13,6 +13,6 @@ public class NYStyleVeggiePizza extends Pizza {
         sauce = "Marinara Sauce";
 
         toppings.add("Grated Reggiano Cheese");
-        toppings.add("Vegetables");
+        toppings.add("Vegetable");
     }
 }
