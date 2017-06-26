@@ -1,6 +1,5 @@
 package factory.abstractfactory.ingredient.factory.impl;
 
-import factory.abstractfactory.ingredient.*;
 import factory.abstractfactory.ingredient.cheese.Cheese;
 import factory.abstractfactory.ingredient.cheese.impl.Reggiano;
 import factory.abstractfactory.ingredient.clams.Clams;
@@ -12,6 +11,7 @@ import factory.abstractfactory.ingredient.pepperoni.Pepperoni;
 import factory.abstractfactory.ingredient.pepperoni.impl.SlicedPepperoni;
 import factory.abstractfactory.ingredient.sauce.Sauce;
 import factory.abstractfactory.ingredient.sauce.impl.MarinaraSauce;
+import factory.abstractfactory.ingredient.vegetables.Vegetable;
 import factory.abstractfactory.ingredient.vegetables.impl.Garlic;
 import factory.abstractfactory.ingredient.vegetables.impl.Mushroom;
 import factory.abstractfactory.ingredient.vegetables.impl.Onion;

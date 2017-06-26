@@ -1,11 +1,11 @@
 package factory.abstractfactory.ingredient.factory;
 
-import factory.abstractfactory.ingredient.*;
 import factory.abstractfactory.ingredient.cheese.Cheese;
 import factory.abstractfactory.ingredient.clams.Clams;
 import factory.abstractfactory.ingredient.dough.Dough;
 import factory.abstractfactory.ingredient.pepperoni.Pepperoni;
 import factory.abstractfactory.ingredient.sauce.Sauce;
+import factory.abstractfactory.ingredient.vegetables.Vegetable;
 
 import java.util.List;
 

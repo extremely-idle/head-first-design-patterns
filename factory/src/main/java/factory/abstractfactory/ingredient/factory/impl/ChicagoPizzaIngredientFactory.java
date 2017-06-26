@@ -1,6 +1,6 @@
 package factory.abstractfactory.ingredient.factory.impl;
 
-import factory.abstractfactory.ingredient.Vegetable;
+import factory.abstractfactory.ingredient.vegetables.Vegetable;
 import factory.abstractfactory.ingredient.cheese.Cheese;
 import factory.abstractfactory.ingredient.cheese.impl.Mozzarella;
 import factory.abstractfactory.ingredient.clams.Clams;

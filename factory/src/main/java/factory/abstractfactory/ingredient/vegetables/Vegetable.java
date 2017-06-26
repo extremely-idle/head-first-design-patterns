@@ -1,4 +1,4 @@
-package factory.abstractfactory.ingredient;
+package factory.abstractfactory.ingredient.vegetables;
 
 /**
  * Created by ross.moug on 23/06/2017.

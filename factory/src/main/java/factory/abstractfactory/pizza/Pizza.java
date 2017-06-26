@@ -1,13 +1,12 @@
 package factory.abstractfactory.pizza;
 
-import factory.abstractfactory.ingredient.Vegetable;
+import factory.abstractfactory.ingredient.vegetables.Vegetable;
 import factory.abstractfactory.ingredient.cheese.Cheese;
 import factory.abstractfactory.ingredient.clams.Clams;
 import factory.abstractfactory.ingredient.dough.Dough;
 import factory.abstractfactory.ingredient.pepperoni.Pepperoni;
 import factory.abstractfactory.ingredient.sauce.Sauce;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -22,7 +21,7 @@ public abstract class Pizza {
     public Pepperoni pepperoni;
     public Clams clams;
 
-    abstract void prepare();
+    public abstract void prepare();
 
     public void bake() {
         System.out.println("Bake for 25 minutes at 350");
@@ -51,5 +50,9 @@ public abstract class Pizza {
                 ", pepperoni=" + pepperoni +
                 ", clams=" + clams +
                 '}';
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

@@ -1,6 +1,6 @@
 package factory.abstractfactory.ingredient.vegetables.impl;
 
-import factory.abstractfactory.ingredient.Vegetable;
+import factory.abstractfactory.ingredient.vegetables.Vegetable;
 
 /**
  * Created by ross.moug on 23/06/2017.
