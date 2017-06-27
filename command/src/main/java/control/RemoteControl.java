@@ -25,20 +25,26 @@ public class RemoteControl {
     }
 
     public void setCommand(int slot, Command onCommand, Command offCommand) {
-        // TODO - STUB
+        onCommandList.set(slot, onCommand);
+        offCommandList.set(slot, offCommand);
     }
 
     public void onButtonWasPushed(int slot) {
-        // TODO - STUB
+        onCommandList.get(slot).execute();
     }
 
     public void offButtonWasPushed(int slot) {
-        // TODO - STUB
+        offCommandList.get(slot).execute();
     }
 
     @Override
     public String toString() {
-        // TODO - STUB
-        return "";
+        StringBuffer stringBuffer = new StringBuffer();
+        stringBuffer.append("\n----- Remote Control -----\n");
+        for (int i = 0; i < onCommandList.size(); i++) {
+            stringBuffer.append(("[slot " + i + "] " + onCommandList.get(i).getClass().getName())
+                + "   " + offCommandList.get(i).getClass().getName() + "\n");
+        }
+        return stringBuffer.toString();
     }
 }
