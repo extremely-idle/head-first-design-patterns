@@ -12,6 +12,7 @@ import java.util.List;
 public class RemoteControl {
     List<Command> onCommandList;
     List<Command> offCommandList;
+    Command undoCommand;
 
     public RemoteControl() {
         onCommandList = new ArrayList<>(7);
@@ -22,6 +23,8 @@ public class RemoteControl {
             onCommandList.add(noCommand);
             offCommandList.add(noCommand);
         }
+
+        undoCommand = noCommand;
     }
 
     public void setCommand(int slot, Command onCommand, Command offCommand) {
@@ -30,11 +33,19 @@ public class RemoteControl {
     }
 
     public void onButtonWasPushed(int slot) {
-        onCommandList.get(slot).execute();
+        final Command onCommand = onCommandList.get(slot);
+        onCommand.execute();
+        undoCommand = onCommand;
     }
 
     public void offButtonWasPushed(int slot) {
-        offCommandList.get(slot).execute();
+        final Command offCommand = offCommandList.get(slot);
+        offCommand.execute();
+        undoCommand = offCommand;
+    }
+
+    public void undoButtonWasPushed() {
+        undoCommand.undo();
     }
 
     @Override
