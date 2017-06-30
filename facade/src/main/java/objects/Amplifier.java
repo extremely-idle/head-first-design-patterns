@@ -24,4 +24,8 @@ public class Amplifier {
         this.volume = volume;
         System.out.println(this.getClass().getName() + " setting volume to " + volume);
     }
+
+    public void off() {
+        System.out.println(this.getClass().getName() + " off");
+    }
 }

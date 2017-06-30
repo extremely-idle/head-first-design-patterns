@@ -43,6 +43,14 @@ public class HomeTheatreFacade {
     }
 
     public void endMovie() {
-        // TODO - STUB
+        System.out.println("Shutting movie theatre down...");
+        popcornPopper.off();
+        lights.on();
+        screen.up();
+        projector.off();
+        amp.off();
+        dvd.stop();
+        dvd.eject();
+        dvd.off();
     }
 }

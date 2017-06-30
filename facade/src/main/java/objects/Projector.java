@@ -11,4 +11,8 @@ public class Projector {
     public void wideScreenMode() {
         System.out.println(this.getClass().getName() + " in widescreen mode (16x9 aspect ratio)");
     }
+
+    public void off() {
+        System.out.println(this.getClass().getName() + " off");
+    }
 }

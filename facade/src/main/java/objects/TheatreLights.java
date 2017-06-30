@@ -14,4 +14,9 @@ public class TheatreLights {
         this.lightLevel = percent;
         System.out.println(this.getClass().getName() + " dimming lights to " + lightLevel + "%");
     }
+
+    public void on() {
+        this.lightLevel = 100;
+        System.out.println(this.getClass().getName() + " on");
+    }
 }

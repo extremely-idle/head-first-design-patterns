@@ -12,4 +12,8 @@ public class PopcornPopper {
     public void pop() {
         System.out.println(this.getClass().getName() + " popping popcorn!");
     }
+
+    public void off() {
+        System.out.println(this.getClass().getName() + " off!");
+    }
 }
