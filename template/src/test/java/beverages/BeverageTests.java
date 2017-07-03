@@ -1,3 +1,5 @@
+package beverages;
+
 import beverages.Coffee;
 import beverages.CoffeeWithHook;
 import beverages.Tea;
