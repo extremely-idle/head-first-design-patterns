@@ -1,7 +1,7 @@
-package menu.pancake;
+package exercise1.menu.pancake;
 
-import iterator.Iterator;
-import menu.MenuItem;
+import exercise1.iterator.Iterator;
+import exercise1.menu.MenuItem;
 
 import java.util.ArrayList;
 import java.util.List;

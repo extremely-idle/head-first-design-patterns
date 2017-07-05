@@ -1,4 +1,4 @@
-package menu;
+package exercise1.menu;
 
 /**
  * Created by ross.moug on 03/07/2017.

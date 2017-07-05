@@ -1,6 +1,6 @@
-package menu.pancake;
+package exercise1.menu.pancake;
 
-import iterator.Iterator;
+import exercise1.iterator.Iterator;
 
 import java.util.List;
 
@@ -13,11 +13,12 @@ public class PancakeMenuItemIterator<MenuItem> implements Iterator {
 
     public PancakeMenuItemIterator(List<MenuItem> menuItemList) {
         this.menuItemList = menuItemList;
+        this.position = 0;
     }
 
     @Override
     public boolean hasNext() {
-        return menuItemList.get(position) != null;
+        return position < menuItemList.size();
     }
 
     @Override
