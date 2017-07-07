@@ -34,4 +34,8 @@ public abstract class MenuComponent {
     public void print() {
         throw new UnsupportedOperationException();
     }
+
+    public java.util.Iterator<MenuComponent> createIterator() {
+        throw new UnsupportedOperationException();
+    }
 }

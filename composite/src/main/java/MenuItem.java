@@ -1,3 +1,5 @@
+import java.util.Iterator;
+
 /**
  * Created by ross.moug on 03/07/2017.
  */
@@ -31,12 +33,16 @@ public class MenuItem extends MenuComponent {
     }
 
     public void print() {
-        System.out.print("  " + getName());
+        System.out.print("\n  " + getName());
 
         if (isVegetarian()) {
             System.out.print(" (v)");
         }
 
         System.out.print(", £" + getPrice() + " -- " + getDescription() + "\n");
+    }
+
+    public Iterator<MenuComponent> createIterator() {
+        return new NullIterator<MenuComponent>();
     }
 }
